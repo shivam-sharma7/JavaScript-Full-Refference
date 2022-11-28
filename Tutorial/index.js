@@ -196,6 +196,83 @@ employees.forEach((employee)=>{
     console.log(employee.name);
 });
 
- 
+const todoText = employees.map((todo)=>{
+    
+    return todo.name;
+});
 
+console.log(todoText);
+
+const todosText = employees.filter((todo)=>{
+    
+    return todo.salary;
+});
+
+console.log(todosText);
+
+ //Conditional in javascript
+
+ const x = 10;
+
+ if(x===10){
+
+    console.log("x is 10");
+ } else{
+
+    console.log("x is't 10");
+ }
+
+ // Ternary Operator
+
+ const a = 11;
+
+ const color = a > 10 ? "red" : "blue";
+
+ console.log(color);
+
+ // Switch case in javascript
+
+ const colors = "green";
+
+ switch(colors){
+  
+    case "red":
+        console.log("color is red");
+        break;
+
+    case "blue":
+    console.log("color is blue");
+    break;
+
+    default:
+        console.log("color is not red");
+        break;
+ }
+
+ // function in javascipt is very important
+
+ function addition(num1, num2){
+
+    return num1 + num2;
+ }
+
+ console.log(addition (20, 50));
+
+ // same way but arrow function
+
+ addition((num3, num4)=>{
+
+    return num3 + num4;
+ })
+
+ console.log(addition(20, 10))
+
+ // same way but arrow function
  
+ const substraction = ((a1, a2)=>{
+    return a1 - a2;
+ })
+
+ console.log(substraction(30, 10));
+
+ // Oops in JavaScript
