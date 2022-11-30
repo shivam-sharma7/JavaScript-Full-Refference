@@ -31,12 +31,12 @@ console.log(String.substring(0, 3).toUpperCase());
 
 console.log(String.split(''))
 
-// Some of very Important
+// Some of very Important methos od string
 
 let tech = " technology, Computer, Ram, SSD";
 console.log(tech.split(", "));
 
-// Arrays in javascript are variable that hold multiple values
+// Arrays in javascript are variable that hold multiple values.
 
  const fruits = ["Apple", "Orange", "Banana", "Grapes"];
 
@@ -55,8 +55,16 @@ console.log(tech.split(", "));
 
  console.log(favFruits);
 
- console.log(favFruits.indexOf("Banana"))
+ console.log(favFruits.indexOf("Banana"));
 
+// Reverse Arrays in javascript
+ let arr = [12, 34, 64, 78, 87, 90];
+
+ for(let i = arr.length-1; i>=0; i--){
+
+    console.log(arr[i]);
+ }
+ 
 // Object in javascript is basically key value pair
 
 const person ={
@@ -222,7 +230,7 @@ console.log(todosText);
     console.log("x is't 10");
  }
 
- // Ternary Operator
+ // Ternary Operator in
 
  const a = 11;
 
@@ -249,18 +257,18 @@ console.log(todosText);
         break;
  }
 
- // function in javascipt is very important
+ // function in javascipt is very important below ex is old
 
- function addition(num1, num2){
+ function additions(num1, num2){
 
     return num1 + num2;
  }
 
- console.log(addition (20, 50));
+ console.log(additions(20, 50));
 
- // same way but arrow function
+ // same way but arrow function very important
 
- addition((num3, num4)=>{
+ let addition = ((num3, num4)=>{
 
     return num3 + num4;
  })
@@ -275,4 +283,37 @@ console.log(todosText);
 
  console.log(substraction(30, 10));
 
- // Oops in JavaScript
+ // Oops in JavaScript in ES6 CLASSES very important....
+
+ class Person{
+
+    constructor(firstName, lastName, dob){
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.dob = dob;
+    }
+ }
+
+ const person1 = new Person("Shivam", "Sharma", "14-7-2002");
+
+ console.log(person1.firstName);
+ console.log(person1.dob);
+
+
+ // Defining class in a Traditional Way.
+function Vehicle(name,maker,engine){
+    this.name = name,
+    this.maker = maker,
+    this.engine = engine
+};
+ 
+Vehicle.prototype.getDetails = function(){
+    console.log('The name of the bike is '+ this.name);
+}
+ 
+let bike1 = new Vehicle('Hayabusa','Suzuki','1340cc');
+let bike2 = new Vehicle('Ninja','Kawasaki','998cc');
+ 
+console.log(bike1.name);
+console.log(bike2.maker);
+console.log(bike1.getDetails());
