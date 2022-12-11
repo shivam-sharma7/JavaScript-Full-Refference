@@ -85,7 +85,7 @@ let orders = (time, work)=>{
 
             },time);
 
-        } else{
+        } else {
 
             reject(console.log("Our shop is close"));
         }
@@ -130,5 +130,11 @@ orders(2000, ()=>console.log(`${stocks.fruits[1]} was selected`))
 
     return orders(1000,() => console.log("Serve the Ice Cream"))
 })
+
+.catch(()=>{
+    console.log("Customer left");
+})
+
+
 
 orders()
