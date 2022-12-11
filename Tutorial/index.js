@@ -187,7 +187,7 @@ const employees = [
         salary: "$52000"
 
     },
-
+// new employee data 👇
     {
         emp_id: 12345,
         name: "Kunal Kushwaha",
